@@ -1,0 +1,64 @@
+<div class="container ">
+
+  <section class="panel panel-default ">
+    <div class="panel-heading ">
+      <h3 class="panel-title ">ADD PRODUCT</h3>
+    </div>
+    <div class="panel-body ">
+
+      <form action="/admin/add-products" class="form-horizontal" role="form" enctype="multipart/form-data" method="POST">
+
+        <div class="form-group">
+
+        </div> <!-- form-group // -->
+
+        <div class="form-group">
+          <label for="name" class="col-sm-3 control-label">Name of the product</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="name" id="name" placeholder="Enter product name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="tech" class="col-sm-3 control-label">Catogory</label>
+          <div class="col-sm-3">
+            <select name="Catogory" class="form-control">
+              <option value="">Select</option>
+              <option value="texnolog2">Mobile</option>
+              <option value="texnolog3">Tablets</option>
+            </select>
+          </div>
+        </div>
+        <!-- form-group // -->
+        <div class="form-group">
+          <label for="about" class="col-sm-3 control-label">Description</label>
+          <div class="col-sm-9">
+            <textarea class="form-control" name="description"  placeholder="about product"></textarea>
+          </div>
+        </div> <!-- form-group // -->
+        <div class="form-group">
+          <label for="qty" class="col-sm-3 control-label">Rate in INR</label>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" name="rate" id="rate" placeholder="Amount">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="name" class="col-sm-3 control-label">Upload Image</label>
+          <div class="col-sm-3">
+            <label class="control-label small" for="file_img">Image jpg:</label> <input type="file" name="file_img">
+          </div>
+
+        </div> <!-- form-group // -->
+        <!-- form-group // -->
+        <hr>
+        <div class="form-group">
+          <div class="col-sm-offset-3 col-sm-9">
+            <button type="submit"  class="btn btn-primary">Add</button>
+          </div>
+        </div> <!-- form-group // -->
+      </form>
+
+    </div><!-- panel-body // -->
+  </section><!-- panel// -->
+
+
+</div> <!-- container// -->

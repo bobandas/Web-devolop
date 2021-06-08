@@ -1,0 +1,260 @@
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: .75rem;
+  }
+  
+  body {
+    background: #ebe8e1;
+  
+  }
+  
+  .card-signin {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card-signin .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  
+  .card-signin .card-img-left {
+    width: 45%;
+    /* Link to your background image using in the property below! */
+    background: scroll center url('/images/photo-1469594292607-7bd90f8d3ba4.jpg');
+    background-size: cover;
+  }
+  
+  .card-signin .card-body {
+    padding: 2rem;
+  }
+  
+  .form-signin {
+    width: 100%;
+  }
+  
+  .form-signin .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+  }
+  
+  .form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .form-label-group input {
+    height: auto;
+    border-radius: 2rem;
+  }
+  
+  .form-label-group>input,
+  .form-label-group>label {
+    padding: var(--input-padding-y) var(--input-padding-x);
+  }
+  
+  .form-label-group>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+  }
+  
+  .form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input:-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-moz-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input:not(:placeholder-shown) {
+    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+    padding-bottom: calc(var(--input-padding-y) / 3);
+  }
+  
+  .form-label-group input:not(:placeholder-shown)~label {
+    padding-top: calc(var(--input-padding-y) / 3);
+    padding-bottom: calc(var(--input-padding-y) / 3);
+    font-size: 12px;
+    color: #777;
+  }
+  
+
+
+
+
+
+
+  
+  /* cart page css*/
+
+
+
+
+  
+
+
+
+
+
+  .shopping-cart{
+    padding-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .shopping-cart.dark{
+    background-color: #f6f6f6;
+  }
+  
+  .shopping-cart .content{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+    background-color: white;
+  }
+  
+  .shopping-cart .block-heading{
+      padding-top: 50px;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+  
+  .shopping-cart .block-heading p{
+    text-align: center;
+    max-width: 420px;
+    margin: auto;
+    opacity:0.7;
+  }
+  
+  .shopping-cart .dark .block-heading p{
+    opacity:0.8;
+  }
+  
+  .shopping-cart .block-heading h1,
+  .shopping-cart .block-heading h2,
+  .shopping-cart .block-heading h3 {
+    margin-bottom:1.2rem;
+    color: #3b99e0;
+  }
+  
+  .shopping-cart .items{
+    margin: auto;
+  }
+  
+  .shopping-cart .items .product{
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .shopping-cart .items .product .info{
+    padding-top: 0px;
+    text-align: center;
+  }
+  
+  .shopping-cart .items .product .info .product-name{
+    font-weight: 600;
+  }
+  
+  .shopping-cart .items .product .info .product-name .product-info{
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  
+  .shopping-cart .items .product .info .product-name .product-info .value{
+    font-weight: 400;
+  }
+  
+  .shopping-cart .items .product .info .quantity .quantity-input{
+      margin: auto;
+      width: 80px;
+  }
+  
+  .shopping-cart .items .product .info .price{
+    margin-top: 15px;
+      font-weight: bold;
+      font-size: 22px;
+   }
+  
+  .shopping-cart .summary{
+    border-top: 2px solid #5ea4f3;
+      background-color: #f7fbff;
+      height: 100%;
+      padding: 30px;
+  }
+  
+  .shopping-cart .summary h3{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .shopping-cart .summary .summary-item:not(:last-of-type){
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .shopping-cart .summary .text{
+    font-size: 1em;
+    font-weight: 600;
+  }
+  
+  .shopping-cart .summary .price{
+    font-size: 1em;
+    float: right;
+  }
+  
+  .shopping-cart .summary button{
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .shopping-cart .items .product .info {
+      padding-top: 25px;
+      text-align: left; 
+    }
+  
+    .shopping-cart .items .product .info .price {
+      font-weight: bold;
+      font-size: 22px;
+      top: 17px; 
+    }
+  
+    .shopping-cart .items .product .info .quantity {
+      text-align: center; 
+    }
+    .shopping-cart .items .product .info .quantity .quantity-input {
+      padding: 4px 10px;
+      text-align: center; 
+    }
+  }
+  

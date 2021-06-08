@@ -1,0 +1,38 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="/" class="navbar-brand">Shopping Cart</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link">Products</a>
+                <a href="/cart" class="nav-item nav-link">Cart</a>
+                {{#if user}}
+                <a href="#" class="nav-item nav-link">Orders</a>
+                {{/if}}
+            </div>
+            {{#if user}}
+            <div class="btn-group ml-auto mr-5">
+                <button type="button" class="btn btn-outline-light ml-auto">{{user.fullName}}</button>
+                <button type="button" class="btn btn-outline-light dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Account</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">My Orders</a>
+
+                    <a class="dropdown-item" href="/logout">Logout</a>
+                </div>
+            </div>
+            {{else}}
+            <a href="/login" class="btn btn-outline-light ml-auto mr-5">Login</a>
+            {{/if}}
+
+            </form>
+        </div>
+    </nav>
+</header>

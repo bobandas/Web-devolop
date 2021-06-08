@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 col-xl-9 mx-auto">
+            <div class="card card-signin flex-row my-5">
+                <div class="card-img-left d-none d-md-flex">
+                    <!-- Background image for card set in CSS! -->
+                </div>
+                <div class="card-body">
+                    <h3 class="login-heading mb-4 text-center">LOG IN!</h3>
+                    <form class="form-signin" method="POST" action="/login">
+                        <div class="form-label-group">
+                            <input type="text" id="inputUserame" name="username" class="form-control" name="username"
+                                placeholder="Username" required>
+                            <label for="inputUserame">Username</label>
+                        </div>
+                        <div class="form-label-group">
+                            <input type="password" id="inputPassword" name="password" class="form-control"
+                                placeholder="Password" required>
+                            <label for="inputPassword">Password</label>
+                        </div>
+
+
+                        <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+                            type="submit"> Login</button>
+                        <div class="text-center">
+                            <a class="small" href="/signup">Create Account</a>
+                        </div>
+                        {{#if loginErr}}
+                        <div class="text-center">
+                            <h7 class="small text-danger">Username or Password is incorrect</h7>
+                        </div>
+                        {{/if}}
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
